@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-image: url("./fotos/ilustracao.svg");
+  background-size: cover;
+  background-repeat: no-repeat;   
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+header>a{
+    margin-left: 3%;
+}
+nav{
+    width: 30%;
+    display: flex;
+    margin-right: 3%;
+}
+nav>a{
+    color: #B6B6B6;
+    margin-left: 7%;
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}
+nav>a:hover{
+    font-weight: bold;
+    color: #43B5F4;
+    border-bottom: 3px solid;
+}
+.apaga-atual{
+    font-weight: bold;
+    color: #43B5F4;
+    border-bottom: 3px solid;
+}
+section{
+    margin-top: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+#bloco-texto-incio{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#bloco-texto-incio>h1{
+    width: 600px;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+#bloco-texto-incio>p{
+    font-style: normal;
+    width: 500px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+#bloco-texto-incio>a{
+    width: 189px;
+    height: 43px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #43B5F4;
+    font-weight: bold;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px #00A4FF;
+    border-radius: 5px
+}
+#bloco-texto-incio>a:hover{
+
+    color: white;
+    font-weight: bold;
+    background: #00A4FF;
+    box-shadow: 0px 4px 4px #00A4FF;
+    border-radius: 5px
+}
+
+#bloco-ilustracao-inicio>img{
+    width: 450px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+}
