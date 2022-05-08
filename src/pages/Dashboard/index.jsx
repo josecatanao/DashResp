@@ -1,9 +1,9 @@
 import "./style.css";
-
+import Menu from "../../components/menu"
 function Dashboard() {
   return (
         <div>
-            Dashboard
+            <Menu />
         </div>
   )
 }

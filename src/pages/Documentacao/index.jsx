@@ -1,9 +1,10 @@
 import "./style.css";
+import Menu from "../../components/menu"
 
 function Documentacao() {
   return (
         <div>
-            Documentacao
+            <Menu/>
         </div>
   )
 }
