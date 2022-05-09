@@ -16,12 +16,53 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #texto-centro {
     width: 40%;
     height: max-content;
 }
+
+#texto-centro>h1{
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+}
+
+#texto-centro>h1>span{
+    color:#5D5F71;
+}
+
+#texto-centro>p{
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    color: #D8D9E4;
+}
+#texto-centro>a{
+    font-family: 'Roboto';
+    width: 189px;
+    height: 43px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #43B5F4;
+    font-weight: bold;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px #00A4FF;
+    border-radius: 5px
+}
+#texto-centro>a:hover{
+    color: #5D5F71;
+}
+
 
 #foto-centro {
     width: max-content;
@@ -33,11 +74,60 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-13px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 #footer{
     width: 100%;
     text-align: center;
     color: grey;
+    font-size: 13px;
+    margin-bottom: 10px;
     font-family: Roboto;
 }
+
+
+
+@media only screen and (max-width: 727px) {
+    #bloco-principal-inicio {
+        background-image: none;
+    }
+    #bloco-centro {
+        margin-top: 20px;
+       flex-direction: column-reverse;
+    }
+    #texto-centro{
+        width: 90%;
+        text-align: center;
+    }
+    #texto-centro>h1{
+        color: #00A4FF;
+        margin-top: 20px;
+    }
+    #texto-centro>p{
+        color: #4F5165;
+    }
+    #texto-centro>a{
+        color: #ffffff;
+        font-weight: bold;
+        background: #43B5F4;
+        box-shadow: 0px 4px 4px #00A4FF;
+        border-radius: 5px;
+        margin: 30px auto 60px auto;
+    }
+    
+    
+  }

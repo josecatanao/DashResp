@@ -9,9 +9,9 @@ function Inicio() {
       <Menu />
       <div id="bloco-centro">
         <div id="texto-centro">
-           <h1>DASHRESP: UMA APLICAÇÃO DE VISUALIZAÇÃO DE DADOS </h1>
+           <h1> <span>DASHRESP:</span> UMA APLICAÇÃO DE VISUALIZAÇÃO DE DADOS </h1>
            <p>O DashResp é uma aplicação de visualização de dados sobre a distribuição de respiradores mecânicos no Brasil, a partir de dados abertos.</p>
-           <a href="">Acessar Dashboard</a>
+           <a href="/dashboard">Acessar Dashboard</a>
         </div>
         <div id="foto-centro">
             <img src={Ilustracao} alt="ilustracao do respirador" />
