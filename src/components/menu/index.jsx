@@ -6,7 +6,7 @@ function Menu() {
     let pagina =  window.location.pathname
     return (
         <div id="bloco-menu"> 
-            <img src={Ilustracao}  alt="logo-foto"/>
+            <a href=""><img src={Ilustracao}  alt="logo-foto"/></a>
             <div id="links">
                 <a className={pagina === "/" ? "pagina-selecionada":""} href="/">Início</a>
                 <a className={pagina === "/dashboard" ? "pagina-selecionada":""} href="/dashboard">Dashboard</a>

@@ -27,3 +27,30 @@
     color: #00A4FF !important;
     border-bottom: 3px solid #00A4FF !important;
 }
+
+@media only screen and (max-width: 729px) {
+ 
+    #bloco-menu{
+        width: 90%;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto 0 auto;
+    }
+    #bloco-menu>a{
+        margin-bottom: 10px;
+    }
+    #links{
+        text-align: center;
+    }
+    #links>a{
+        font-family: Roboto;
+        text-decoration: none;
+        color: #B6B6B6;
+        margin:5px;
+        border-bottom: 3px solid transparent;
+    }
+       
+}

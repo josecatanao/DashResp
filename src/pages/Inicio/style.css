@@ -128,6 +128,9 @@
         border-radius: 5px;
         margin: 30px auto 60px auto;
     }
+    #foto-centro>img {
+        width: 250px;  
+    }
     
     
   }
