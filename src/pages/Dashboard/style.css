@@ -1,0 +1,38 @@
+#menu-dash{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#menu-dash>button{
+    margin: 5px;
+    cursor: pointer;
+    color: #B6B6B6;
+    background-color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    border:3px solid white;
+}
+#menu-dash>button:hover{
+    border-top: 3px solid  #00A4FF;
+    border-bottom: 3px solid  #00A4FF;
+    color: black;
+}
+.titulo-filtro{
+    width: 90%;
+    color: #575757;
+    font-family: Roboto;
+    margin: 10px auto;
+    text-align: center;
+}
+#graficos{
+    width: 100%;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 729px) {
+    .titulo-filtro{
+        margin-top: 25px;
+    }
+}
