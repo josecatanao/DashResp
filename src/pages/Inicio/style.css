@@ -101,7 +101,7 @@
 
 
 
-@media only screen and (max-width: 727px) {
+@media only screen and (max-width: 729px) {
     #bloco-principal-inicio {
         background-image: none;
     }
@@ -111,6 +111,7 @@
     }
     #texto-centro{
         width: 90%;
+        
         text-align: center;
     }
     #texto-centro>h1{
