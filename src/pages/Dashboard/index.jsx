@@ -34,6 +34,9 @@ function Dashboard() {
        <button>SE</button>
        <button>TO</button>
       </div>
+     
+      <iframe id="frame"  src="https://charts.mongodb.com/charts-project-0-ylbgo/embed/dashboards?id=8ba1a66c-d7ae-4425-bd7b-214a7d60577c&theme=light&autoRefresh=true&maxDataAge=3600&showTitleAndDesc=false&scalingWidth=scale&scalingHeight=scale"></iframe>
+     
     </div>
   )
 }
