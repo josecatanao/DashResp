@@ -1,22 +1,23 @@
 import "./style.css";
 import Menu from "../../components/menu"
 import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
+import { useEffect } from "react";
 
 const sdk = new ChartsEmbedSDK();
-
 const chart1 = sdk.createChart({
   baseUrl: "https://charts.mongodb.com/charts-project-0-ylbgo",
   chartId: "627a746b-d1c5-4167-8c17-ecdd4e5710fd",
   width: "700px",
   height: "300px"
 });
+ 
 
 const chart2 = sdk.createChart({
   baseUrl: "https://charts.mongodb.com/charts-project-0-ylbgo",
   chartId: "627a6814-64ce-4b97-8476-5bcedf270e95",
   width: "350px",
   height: "150px"
-});
+}); 
 
 const chart3 = sdk.createChart({
   baseUrl: "https://charts.mongodb.com/charts-project-0-ylbgo",
@@ -37,17 +38,24 @@ const filtrar = (valor) => {
   chart3.setFilter({ "UF": valor });
 }
 const limpar = () => {
+  var lista = document.getElementsByClassName("fitro-selecionado");
+  for (var i = lista.length - 1; i >= 0; i--) {
+    lista[i].classList.remove("fitro-selecionado") 
+  }
   chart1.setFilter({});
   chart2.setFilter({});
   chart3.setFilter({});
 }
 
-chart1.render(document.getElementById("chart1"))
-chart2.render(document.getElementById("chart2"))
-chart3.render(document.getElementById("chart3"))
 
 
 function Dashboard() {
+  useEffect(()=>{
+    chart1.render(document.getElementById("chart1"))
+    chart2.render(document.getElementById("chart2"))
+    chart3.render(document.getElementById("chart3"))
+  })
+  
   return (
     <div>
       <Menu />
