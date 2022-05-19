@@ -5,37 +5,12 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-#menu-dash>button{
-    margin: 5px;
-    cursor: pointer;
-    color: #B6B6B6;
-    background-color: white;
-    font-weight: bold;
-    font-family: Roboto;
-    border:3px solid white;
-}
-#menu-dash>button:hover{
-    border-top: 3px solid  #00A4FF;
-    border-bottom: 3px solid  #00A4FF;
-    color: black;
-}
 .titulo-filtro{
     width: 90%;
     color: #575757;
     font-family: Roboto;
     margin: 10px auto;
     text-align: center;
-}
-
-.fitro-selecionado{
-    margin: 5px;
-    cursor: pointer;
-    color: #000000 !important;
-    background-color: white;
-    font-weight: bold;
-    font-family: Roboto;
-    border-top: 3px solid  #00A4FF !important;
-    border-bottom: 3px solid  #00A4FF !important;
 }
 
 #bloco-graficos{
@@ -46,8 +21,7 @@
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 729px) {
-    .titulo-filtro{
-        margin-top: 25px;
-    }
+#chart1,#chart2,#chart3{
+    width: 350px;
+    height: 350px;
 }
