@@ -19,9 +19,33 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
+    background-color: #929292;
 }
 
-#chart1,#chart2,#chart3{
-    width: 350px;
-    height: 350px;
+#chart2,#chart3,#chart4,#chart5,#chart6,#chart7{
+    width: 320px;
+    height: 220px;
+    margin: 10px;
+}
+#chart1{
+    width: 82%;
+    height: 380px;
+    margin: 20px;
+}
+
+#chart8,#chart11{
+    width: 480px;
+    height: 480px;
+    margin: 10px;
+}
+
+#chart9{
+    width: 82%;
+    height: 380px;
+    margin: 10px;
+}
+#chart10{
+    width: 82%;
+    height: 380px;
+    margin: 10px;
 }
