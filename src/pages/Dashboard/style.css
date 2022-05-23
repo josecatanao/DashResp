@@ -1,11 +1,12 @@
-#menu-dash{
+#menu-dash {
     width: 90%;
     margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.titulo-filtro{
+
+.titulo-filtro {
     width: 90%;
     color: #575757;
     font-family: Roboto;
@@ -13,39 +14,56 @@
     text-align: center;
 }
 
-#bloco-graficos{
+#bloco-graficos {
     width: 90%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    background-color: #929292;
 }
 
-#chart2,#chart3,#chart4,#chart5,#chart6,#chart7{
+#chart2,
+#chart3,
+#chart4,
+#chart5,
+#chart6,
+#chart7 {
     width: 320px;
     height: 220px;
     margin: 10px;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
-#chart1{
+
+#chart1 {
     width: 82%;
     height: 380px;
     margin: 20px;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
-#chart8,#chart11{
+#chart8,
+#chart11 {
     width: 480px;
     height: 480px;
     margin: 10px;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
-#chart9{
+#chart9 {
     width: 82%;
     height: 380px;
     margin: 10px;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
-#chart10{
+
+#chart10 {
     width: 82%;
     height: 380px;
     margin: 10px;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }

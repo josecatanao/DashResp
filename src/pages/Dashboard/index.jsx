@@ -14,8 +14,8 @@ const chart6 = sdk.createChart({ chartId: "627a720b-db1f-4503-83c1-744b5b73a9ca"
 const chart7 = sdk.createChart({ chartId: "627a80a6-1fda-49dd-8af6-b5262a1e8df3", showAttribution: false });
 const chart8 = sdk.createChart({ chartId: "627a7666-088b-4a47-8e5b-6bca47edb0aa", showAttribution: false });
 const chart9 = sdk.createChart({ chartId: "627a83e4-b109-4105-8c6f-b778a39b32fd", showAttribution: false });
-const chart10 = sdk.createChart({ chartId:"627a85c9-64ce-467e-810d-5bcedf522214", showAttribution: false });
-const chart11 = sdk.createChart({ chartId:"627a88ab-805b-4335-83d7-75a7eb878258", showAttribution: false });
+const chart10 = sdk.createChart({ chartId: "627a85c9-64ce-467e-810d-5bcedf522214", showAttribution: false });
+const chart11 = sdk.createChart({ chartId: "627a88ab-805b-4335-83d7-75a7eb878258", showAttribution: false });
 
 function Dashboard() {
   const { register, handleSubmit } = useForm();
@@ -68,7 +68,7 @@ function Dashboard() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <label>UF</label>
           <select {...register("UF")}>
-            <option selected>Todos</option>
+            <option value="todos">Todos</option>
             <option value="AC">AC</option>
             <option value="AL">AL</option>
             <option value="AP">AP</option>
@@ -98,18 +98,48 @@ function Dashboard() {
             <option value="TO">TO</option>
             <option value="AC">Limpar</option>
           </select>
+
           <label>Tipo</label>
           <select  {...register("TIPO")}>
-            <option value="UTI">Todos</option>
+            <option value="todos">Todos</option>
             <option value="UTI">UTI</option>
             <option value="TRANSPORTE">TRANSPORTE</option>
             <option value="TRANSPORTE USA">TRANSPORTE USA</option>
           </select>
+
+          <label>Fornecedor</label>
+          <select  {...register("FORNECEDOR")}>
+           <option value="todos">Todos</option>
+            <option value="ALLIAGE">ALLIAGE </option>
+            <option value="HORTRON">HORTRON</option>
+            <option value="INSPIRAR">INSPIRAR </option>
+            <option value="KTK">KTK </option>
+            <option value="KTK/VAYIRE ">KTK/VAYIRE </option>
+            <option value="L C DADDE COM AT INST MAT MEDICO EPP">L C DADDE COM AT INST MAT MEDICO EPP </option>
+            <option value="LEISTUNG/VYAIRE ">LEISTUNG/VYAIRE </option>
+            <option value="LIFEMED">LIFEMED </option>
+            <option value="MAGNAMED">MAGNAMED </option>
+            <option value="MAGNAMED/REQUISIÇÃO">MAGNAMED/REQUISIÇÃO </option>
+            <option value="RUSSER">RUSSER</option>
+            <option value="RUSSER BRASIL">RUSSER BRASIL</option>
+            <option value="SUZANO/Resmed">SUZANO/Resmed</option>
+            <option value="SUZANO/Zhongxun Medical">SUZANO/Zhongxun Medical</option>
+            <option value="UTI">UTI</option>
+            <option value="VYAIREl ">VYAIREl</option>
+            <option value="SVYAIRE LTV 1200 USA">SVYAIRE LTV 1200 USA</option>
+            <option value="VYAIRE LTV 2200 USA">VYAIRE LTV 2200 USA</option>
+            <option value="VYAIRE/INTERMED">VYAIRE/INTERMED</option>
+            <option value="WEG ">WEG</option>
+          </select>
+
+
           <label>Estado/Municipio</label>
           <select  {...register("ESTADOMUNICIPIO")}>
+          <option value="todos">Todos</option>
             <option value="ESTADO">Estado</option>
             <option value="MUNICIPIO">Municipio</option>
           </select>
+
           <button type="submit">Filtrar valores</button>
         </form>
 
