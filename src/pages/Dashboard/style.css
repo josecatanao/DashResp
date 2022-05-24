@@ -63,6 +63,7 @@
     background-color: #ffff;
     justify-content: center;
     align-items: center;
+    font-size: 13px;
     color: #00A4FF;
     cursor: pointer;
     border: 1px solid #00A4FF;
@@ -108,7 +109,7 @@
 
 #chart12,
 #chart13{
-    width: 380px;
+    width: 450px;
     height: 150px;
     margin: 10px;
     border: 1px solid grey;

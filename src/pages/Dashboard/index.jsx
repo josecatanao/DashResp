@@ -2,7 +2,8 @@ import "./style.css";
 import Menu from "../../components/menu"
 import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
 import { useForm } from 'react-hook-form';
-import { useEffect } from "react";
+import { useEffect, useState} from "react";
+
 
 const sdk = new ChartsEmbedSDK({ baseUrl: "https://charts.mongodb.com/charts-project-0-ylbgo" });
 const chart1 = sdk.createChart({ chartId: "627a746b-d1c5-4167-8c17-ecdd4e5710fd", showAttribution: false });
@@ -22,13 +23,26 @@ const chart13 = sdk.createChart({ chartId: "628bee1c-4f75-4c9f-8f29-7acd983fd766
 function Dashboard() {
   const { register, handleSubmit } = useForm();
 
+
   const onSubmit = (e) => {
-   console.log(e)
+    var uf = document.querySelector("#uf").value;
+    var tipo = document.querySelector("#tipo").value;
+    var fornecedor = document.querySelector("#fornecedor").value;
+    var estadomunicipio = document.querySelector("#estadomunicpio").value;
+
+    if (uf === "todos") { delete e.UF }
+    if (estadomunicipio === "todos") { delete e.ESTADOMUNICIPIO }
+    if (fornecedor === "todos") { delete e.FORNECEDOR }
+    if (tipo === "todos") { delete e.TIPO }
+    
     if (e.UF === "todos") { delete e.UF }
     if (e.ESTADOMUNICIPIO === "todos") { delete e.ESTADOMUNICIPIO }
     if (e.FORNECEDOR === "todos") { delete e.FORNECEDOR }
     if (e.TIPO === "todos") { delete e.TIPO }
 
+
+  
+    console.log(e)
     chart1.setFilter(e);
     chart2.setFilter(e);
     chart3.setFilter(e);
@@ -36,16 +50,14 @@ function Dashboard() {
     chart5.setFilter(e);
     chart6.setFilter(e);
     chart7.setFilter(e);
-    chart8.setFilter(e);
     chart9.setFilter(e);
     chart10.setFilter(e);
     chart11.setFilter(e);
     chart12.setFilter(e);
     chart13.setFilter(e);
+}
 
-  }
-
-  function limpafiltros(){
+function limparFiltos(){
     var uf = document.querySelector("#uf");
     var tipo = document.querySelector("#tipo");
     var fornecedor = document.querySelector("#fornecedor");
@@ -68,21 +80,12 @@ function Dashboard() {
     chart11.setFilter({});
     chart12.setFilter({});
     chart13.setFilter({});
+}
 
 
-
-  }
 
   useEffect(() => {
-    var uf = document.querySelector("#uf");
-    var tipo = document.querySelector("#tipo");
-    var fornecedor = document.querySelector("#fornecedor");
-    var estadomunicpio = document.querySelector("#estadomunicpio");
-    uf.value = "todos"
-    tipo.value = "todos"
-    fornecedor.value = "todos"
-    estadomunicpio.value = "todos"
-
+     limparFiltos()
     //Valor comprado por UF
     chart1.render(document.getElementById("chart1"))
     //Valor total das compras dos respiradores
@@ -109,6 +112,7 @@ function Dashboard() {
     chart12.render(document.getElementById("chart12"))
     //Quantidade de respiradores comprados para o exterior
     chart13.render(document.getElementById("chart13"))
+    
   })
 
   return (
@@ -120,7 +124,7 @@ function Dashboard() {
           <div id="blocos-select">
             <div>
               <label>UF</label>
-              <select id="uf" {...register("UF")}>
+              <select  id="uf" {...register("UF")}>
                 <option value="todos">Todos</option>
                 <option value="AC">AC</option>
                 <option value="AL">AL</option>
@@ -149,7 +153,6 @@ function Dashboard() {
                 <option value="SP">SP</option>
                 <option value="SE">SE</option>
                 <option value="TO">TO</option>
-                <option value="AC">Limpar</option>
               </select>
             </div>
 
@@ -202,11 +205,10 @@ function Dashboard() {
           </div>
           <div id="bloco-filtro">
             <button id="button-filtra-valores" type="submit">Filtrar valores</button>
-            <button id="button-limpa-filtra" onClick={limpafiltros}>Limpar Filtros</button>
+            <a id="button-limpa-filtra" onClick={limparFiltos}>Limpar Filtros</a>
           </div>
-
         </form>
-
+        
       </div>
       <div id="bloco-graficos">
         <div id="chart2"></div>
