@@ -103,8 +103,10 @@
     width: 380px;
     height: 150px;
     margin: 10px;
-    border: 1px solid grey;
+    border: 2px solid #00A4FF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 164, 255, 0.25));
     border-radius: 10px;
+    
 }
 
 #chart12,
@@ -112,7 +114,8 @@
     width: 450px;
     height: 150px;
     margin: 10px;
-    border: 1px solid grey;
+    border: 2px solid #00A4FF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 164, 255, 0.25));
     border-radius: 10px;
 }
 
@@ -120,7 +123,8 @@
     width: 82%;
     height: 380px;
     margin: 20px;
-    border: 1px solid grey;
+    border: 2px solid #00A4FF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 164, 255, 0.25));
     border-radius: 10px;
 }
 
@@ -129,7 +133,8 @@
     width: 480px;
     height: 480px;
     margin: 10px;
-    border: 1px solid grey;
+    border: 2px solid #00A4FF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 164, 255, 0.25));
     border-radius: 10px;
 }
 
@@ -137,7 +142,8 @@
     width: 82%;
     height: 380px;
     margin: 10px;
-    border: 1px solid grey;
+    border: 2px solid #00A4FF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 164, 255, 0.25));
     border-radius: 10px;
 }
 
@@ -145,6 +151,7 @@
     width: 82%;
     height: 380px;
     margin: 10px;
-    border: 1px solid grey;
+    border: 2px solid #00A4FF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 164, 255, 0.25));
     border-radius: 10px;
 }
