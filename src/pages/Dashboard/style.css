@@ -99,7 +99,7 @@
 #chart4,
 #chart5,
 #chart6,
-#chart7 {
+#chart7{
     width: 380px;
     height: 150px;
     margin: 10px;
@@ -107,6 +107,14 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 164, 255, 0.25));
     border-radius: 10px;
     
+}
+#chart14 {
+    width: 82%;
+    height: 450px;
+    margin: 10px;
+    border: 2px solid #00A4FF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 164, 255, 0.25));
+    border-radius: 10px;
 }
 
 #chart12,

@@ -2,7 +2,7 @@ import "./style.css";
 import Menu from "../../components/menu"
 import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
 import { useForm } from 'react-hook-form';
-import { useEffect, useState} from "react";
+import { useEffect} from "react";
 
 
 const sdk = new ChartsEmbedSDK({ baseUrl: "https://charts.mongodb.com/charts-project-0-ylbgo" });
@@ -19,6 +19,7 @@ const chart10 = sdk.createChart({ chartId: "627a85c9-64ce-467e-810d-5bcedf522214
 const chart11 = sdk.createChart({ chartId: "627a88ab-805b-4335-83d7-75a7eb878258", showAttribution: false });
 const chart12 = sdk.createChart({ chartId: "628bee91-ea37-48b3-8f39-740bc8fb9304", showAttribution: false });
 const chart13 = sdk.createChart({ chartId: "628bee1c-4f75-4c9f-8f29-7acd983fd766", showAttribution: false });
+const chart14 = sdk.createChart({ chartId: "62965538-eb12-46bc-8201-23cfd877c806", showAttribution: false });
 
 function Dashboard() {
   const { register, handleSubmit } = useForm();
@@ -50,11 +51,21 @@ function Dashboard() {
     chart5.setFilter(e);
     chart6.setFilter(e);
     chart7.setFilter(e);
+
+    if(e.uf ==="todos"){
+      chart8.setFilter({});
+    }else{
+      chart8.setFilter({"uf":e.UF});
+    }
+  
+
+
     chart9.setFilter(e);
     chart10.setFilter(e);
     chart11.setFilter(e);
     chart12.setFilter(e);
     chart13.setFilter(e);
+    chart14.setFilter(e);
 }
 
 function limparFiltos(){
@@ -80,6 +91,7 @@ function limparFiltos(){
     chart11.setFilter({});
     chart12.setFilter({});
     chart13.setFilter({});
+    chart14.setFilter({});
 }
 
 
@@ -112,6 +124,8 @@ function limparFiltos(){
     chart12.render(document.getElementById("chart12"))
     //Quantidade de respiradores comprados para o exterior
     chart13.render(document.getElementById("chart13"))
+    //Mostra a quantidade enviada para o exterior 
+    chart14.render(document.getElementById("chart14"))
     
   })
 
@@ -221,6 +235,7 @@ function limparFiltos(){
         <div id="chart13"></div>
         <div id="chart1"></div>
         <div id="chart9"></div>
+        <div id="chart14"></div>
         <div id="chart11"></div>
         <div id="chart8"></div>
         <div id="chart10"></div>
