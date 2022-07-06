@@ -3,6 +3,7 @@ import Menu from "../../components/menu"
 import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
 import { useForm } from 'react-hook-form';
 import { useEffect} from "react";
+import Footer from "../../components/footer"
 
 
 const sdk = new ChartsEmbedSDK({ baseUrl: "https://charts.mongodb.com/charts-project-0-ylbgo" });
@@ -222,7 +223,7 @@ function limparFiltos(){
             <a id="button-limpa-filtra" onClick={limparFiltos}>Limpar Filtros</a>
           </div>
         </form>
-        
+        <a id="link-para-baixar" href="https://www.kaggle.com/datasets/josecatano/distribuio-dos-respiradores-mecanicos-no-brasil">Download da base de dados</a>
       </div>
       <div id="bloco-graficos">
         <div id="chart2"></div>
@@ -240,6 +241,7 @@ function limparFiltos(){
         <div id="chart8"></div>
         <div id="chart10"></div>
       </div>
+      <Footer/>
     </div>
   )
 }

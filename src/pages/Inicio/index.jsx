@@ -18,7 +18,7 @@ function Inicio() {
         </div>
       </div>
       <div id="footer">
-        <p>DashResp. IFPB 2022</p>
+        <p>DashResp. 2022 Versão 1.0</p>
       </div>
     </div>
   )

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap');
+
+
+#corpo-projeto{
+  display: flex;
+    flex-direction: column;
+    height: 89vh;
+    justify-content: space-between;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  width: 31%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.tab {
+  font-family: Roboto;
+  color: #B6B6B6;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  color: #00A4FF;
+  font-weight: bold;
+}
+
+.tab:hover {
+  color: #00A4FF;
+  font-weight: bold;
+}
+
+.tab-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+#Objetivo{
+  margin-top: -147px;
+}
+
+#Metodologia{
+  margin-top: -223px;
+}
+
+#Objetivo>h1{
+  font-family: Roboto;
+  color: #7b888e;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 11px;
+}
+
+#Objetivo>img {
+  width: 18%;
+  margin: 30px auto;
+  display: block;
+}
+
+#Objetivo>p{
+  width: 62%;
+  font-family: Roboto;
+  text-align: justify;
+  color: #2e2e2e;
+  margin: 17px auto;
+  line-height: 24px;
+}
+
+
+#Metodologia>h1{
+  font-family: Roboto;
+  color: #7b888e;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 11px;
+}
+
+#Metodologia>p{
+  width: 62%;
+  font-family: Roboto;
+  text-align: justify;
+  color: #2e2e2e;
+  margin: 17px auto;
+  line-height: 24px;
+}
+
+
+
+#Arquitetura>h1{
+    font-family: Roboto;
+    color: #7b888e;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 11px;
+}
+
+#Arquitetura>img {
+  width: 65%;
+  margin: 0 auto;
+  display: block;
+}
+#Arquitetura>p{
+  width: 71%;
+  font-family: Roboto;
+  text-align: justify;
+  color: #2e2e2e;
+  margin: 17px auto;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 729px) {
+
+  #Objetivo{
+    margin-top: -11%;
+  }
+  
+  #Metodologia{
+    margin-top: -36%;
+  }
+
+  #Arquitetura>p{
+    width: 100%;
+  }
+  #Metodologia>p{
+   width: 100%;
+  }
+  #Objetivo>p{
+    width: 100%;
+  }
+  #Objetivo>img {
+    width: 40%;
+    margin: 30px auto;
+    display: block;
+  }
+  
+
+     
+}

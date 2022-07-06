@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap');
+#bloco-footer{
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    padding: 20px;
+}
+
+#bloco-footer>h4{
+    font-weight: bold;
+    font-family: Roboto;
+    color: grey;
+}
+#bloco-footer>h4>span{
+    color: #00A4FF;
+}
+
+#bloco-footer>p{
+    color: #727272;
+    font-family: Roboto;
+}
